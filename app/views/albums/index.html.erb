@@ -1,0 +1,12 @@
+<% @albums.each do |ab| %>
+  <div class="album-thumbnail col-xs-6 col-md-5">
+
+    <%= link_to ab, :class => "thumbnail" do %>
+    <% ab.pictures.each do |p| %>
+      <%= image_tag url_for(:controller => "pictures", :action => "show", :id => p.id), size: "350" %>
+    <% end %>
+    <p class="album-title"><%= ab.title %></p>
+
+    <% end %>
+  </div>
+<% end %>

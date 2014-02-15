@@ -1,4 +1,7 @@
 Jamesgarage::Application.routes.draw do
+  get "pictures/show"
+  resources :albums
+  
   get "home" => "static_pages#home"
   get "services" => "static_pages#services"
   get "contact" => "static_pages#contact"

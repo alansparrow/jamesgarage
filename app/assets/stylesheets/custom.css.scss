@@ -101,10 +101,13 @@ footer small {
 	transition: all .2s ease;
 }
 
+.pin {
+ margin-left: 30px;
+}
+
 .pin img {
-	width: 100%;
 	border-bottom: 1px solid #ccc;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 	margin-bottom: 5px;
 }
 
@@ -112,4 +115,17 @@ footer small {
 	font: 12px/18px Arial, sans-serif;
 	color: #333;
 	margin: 0;
+}
+.album-title {
+  display: block;
+  width: 300px;
+}
+
+.album-thumbnail {
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+.side-menu {
+  margin-top: 35px;
 }

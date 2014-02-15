@@ -1,0 +1,10 @@
+<h1><%= @album.title %></h1>
+<% @album.pictures.each do |p| %>
+<div class="col-xs-6 col-md-5">
+  <%= image_tag url_for(:controller => "pictures", :action => "show", :id => p.id), size: "350", :class => "thumbnail" %>
+</div>
+<% end %>
+
+
+
+
