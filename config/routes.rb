@@ -1,8 +1,11 @@
 Jamesgarage::Application.routes.draw do
   get "pictures/show"
-  resources :albums
+
+  resources :albums do
+    resources :pictures
+  end
   
-  get "home" => "static_pages#home"
+  get "home" => "albums#index"
   get "services" => "static_pages#services"
   get "contact" => "static_pages#contact"
   get "faq" => "static_pages#faq"
@@ -10,7 +13,7 @@ Jamesgarage::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#home'
+  root 'albums#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

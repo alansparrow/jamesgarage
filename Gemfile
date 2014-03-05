@@ -49,3 +49,6 @@ group :development, :test do
 end
 
 gem 'annotate', '2.5.0', group: :development
+
+
+gem 'fancybox-rails'

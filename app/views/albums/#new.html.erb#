@@ -5,6 +5,7 @@
       
       <%= f.label :title %>
       <%= f.text_field :title %>
+      <%= file_field_tag 'attachment' %>
       <%= f.submit "Create my album", class: "btn btn-default" %>
 
     <% end %>

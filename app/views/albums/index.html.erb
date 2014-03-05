@@ -2,11 +2,9 @@
   <div class="album-thumbnail col-xs-6 col-md-5">
 
     <%= link_to ab, :class => "thumbnail" do %>
-    <% ab.pictures.each do |p| %>
-      <%= image_tag url_for(:controller => "pictures", :action => "show", :id => p.id), size: "350" %>
+      <%= image_tag url_for(:controller => "pictures", :action => "show", :id => ab.pictures.first.id), size: "350" %>
+      <p class="album-title"><%= ab.title %></p>
     <% end %>
-    <p class="album-title"><%= ab.title %></p>
 
-    <% end %>
   </div>
 <% end %>

@@ -13,13 +13,17 @@ class AlbumsController < ApplicationController
 
   def create
     @album = Album.new(:title => params[:album][:title])
-    @attachment = @album.pictures.new
-    @attachment.uploaded_picture = params[:attachment]
+    #@attachment = @album.pictures.new
+    #@attachment.uploaded_picture = params[:attachment]
 
     if @album.save
-      redirect_to albums_path
+      redirect_to new_album_picture_path(@album)
     else
       render 'new'
     end
+  end
+
+  def edit
+    @album = Album.find(params[:id])
   end
 end

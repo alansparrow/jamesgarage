@@ -1,0 +1,6 @@
+
+
+    @album = Album.new(:title => params[:album][:title])
+    #@attachment = @album.pictures.new
+    #@attachment.uploaded_picture = params[:attachment]
+
