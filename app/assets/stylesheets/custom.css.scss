@@ -38,19 +38,21 @@ p {
 
 /* header */
 
+#logo-div {
+  margin-left: 1%;
+  margin-top: 1%;
+
+} 
+
 #logo {
-  
-  position: fixed;
-  left: 45%;
-  margin-right: 10px;
   font-size: 1.7em;
   color: #f0f0f0;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 12px;
   font-weight: bold;
   line-height: 1em;
 }
+
 
 #logo:hover {
   color: #fff;
@@ -128,4 +130,18 @@ footer small {
 
 .side-menu {
   margin-top: 35px;
+}
+
+.contact-us {
+  margin-top: 45px;
+  
+}
+
+#intro {
+  margin-left: 13%;
+  color: #5bc0de;
+}
+
+.albums {
+  padding-top: 1%;
 }

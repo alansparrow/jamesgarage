@@ -1,15 +1,11 @@
-if (typeof jQuery != 'undefined') {
-    
-    alert("jQuery library is loaded!");
-    
-}else{
-    
-    alert("jQuery library is not found!");
-    
-}
-
-
-
-$(document).on('ready page:change', function() {
-    $(".fancybox").fancybox();
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		prevEffect		: 'none',
+		nextEffect		: 'none',
+		closeBtn		: false,
+		helpers		: {
+			title	: { type : 'inside' },
+			buttons	: {}
+		}
+	});
 });
