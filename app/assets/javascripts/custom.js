@@ -1,7 +1,15 @@
-$(document).ready(function() {
+if (typeof jQuery != 'undefined') {
+    
+    alert("jQuery library is loaded!");
+    
+}else{
+    
+    alert("jQuery library is not found!");
+    
+}
 
-    $("h1").click(function() {
-	$("a").fadeOut(300);
-	$(this).fadeOut(300);
-    });
+
+
+$(document).on('ready page:change', function() {
+    $(".fancybox").fancybox();
 });

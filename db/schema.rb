@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140212184636) do
+ActiveRecord::Schema.define(version: 20140307075118) do
 
   create_table "albums", force: true do |t|
     t.string   "title"
@@ -21,11 +21,9 @@ ActiveRecord::Schema.define(version: 20140212184636) do
 
   create_table "pictures", force: true do |t|
     t.integer  "album_id"
-    t.string   "filename"
-    t.string   "content_type"
-    t.binary   "data"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "src_link"
   end
 
 end

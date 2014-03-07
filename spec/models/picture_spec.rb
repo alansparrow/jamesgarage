@@ -2,13 +2,11 @@
 #
 # Table name: pictures
 #
-#  id           :integer          not null, primary key
-#  album_id     :integer
-#  filename     :string(255)
-#  content_type :string(255)
-#  data         :binary
-#  created_at   :datetime
-#  updated_at   :datetime
+#  id         :integer          not null, primary key
+#  album_id   :integer
+#  created_at :datetime
+#  updated_at :datetime
+#  src_link   :string(255)
 #
 
 require 'spec_helper'

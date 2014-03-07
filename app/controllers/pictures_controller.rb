@@ -7,7 +7,13 @@ class PicturesController < ApplicationController
   def create
     @album = Album.find(params[:album_id])
     @attachment = @album.pictures.new
+
+    #save to receive id
+    @attachment.save
+
     @attachment.uploaded_picture = params[:picture][:picture]
+
+    @attachment.save
 
     if @album.save
       redirect_to new_album_picture_path(@album)
