@@ -39,10 +39,20 @@ p {
 /* header */
 
 #logo-div {
+  float: left;
   margin-left: 1%;
   margin-top: 1%;
 
 } 
+
+#slogan-div {
+  display: inline-block;
+  float: left;	   
+  color: #f0f0f0;
+  margin-top: 1%;
+  margin-left: 14%;
+}
+
 
 #logo {
   font-size: 1.7em;
@@ -145,3 +155,4 @@ footer small {
 .albums {
   padding-top: 1%;
 }
+
